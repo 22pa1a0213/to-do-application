@@ -1,0 +1,115 @@
+/* style.css */
+
+/* Basic reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Heading styling */
+h1 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Form styling */
+#task-form {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+#task-input {
+  padding: 10px;
+  border: 2px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  width: 300px;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Button styling */
+.complete i {
+  color: green;
+}
+
+.delete i {
+  color: red;
+}
+
+/* Task list styling */
+#task-list {
+  list-style-type: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+#task-list li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#task-list .complete {
+  text-decoration: line-through;
+  color: #888;
+}
+
+.complete {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.delete {
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+  color: #721c24;
+}
+
+.complete:hover {
+  background-color: #c3e6cb;
+}
+
+.delete:hover {
+  background-color: #f5c6cb;
+}
+
+/* Responsive design for screens with max-width of 600px */
+@media (max-width: 600px) {
+  #task-input {
+    width: 100%;
+  }
+
+  #task-form {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
